@@ -4,6 +4,10 @@ const browserSync = require("browser-sync").create();
 gulp.task("default", function () {
   return gulp.src("src/**/*.html").pipe(gulp.dest("dist/"));
 });
+gulp.task("icon", function () {
+  return gulp.src("src/assets/icon/*.svg").pipe(gulp.dest("dist/assets/icon/"));
+});
+
 gulp.task("concat", function () {
   return gulp
     .src("src/assets/css/*.css")

@@ -4,15 +4,56 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
   <title>Document</title>
 </head>
-<body>
-  <header>я шапка сайта</header>
-  <h1>Hello gulp</h1>
-  <h2>Отслеживаем изменения</h2>
-  <p>я какой то текст</p>
-  <footer>я подвал сайта</footer>
+
+  <body class="page">
+    <div class="block-shadown"><!-- верхний колонтитул и навигация -->
+    
+    <header class="header page__header container">
+    
+      <div class="logo">
+        <a href="/" class="logo__content"><img src="./assets/img/logo.svg" alt="logo"></a>
+      </div>
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="/">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="https://">Devices</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="https://">Delivery & Payment</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="https://">Guarantee</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="https://">About Us</a>
+        </li>
+      </ul>
+      <div class="block-actions">
+        <div class="block-cart">
+          <div class="block-cart__icon"><img src="./assets/icon/cart.svg" alt="cart"></div>
+          <p class="block-cart__text">Cart<span class="block-cart__count">0</span></p>
+        </div>
+        <div class="block-sign-in">
+          <button class="block-sign-in__button">Sign In</button>
+        </div>
+      </div>
+    
+    </header></div>
+  
+    <!-- нижний колонтитул -->
+    <footer class="footer page__footer">...</footer>
+  
 </body>
 </html>

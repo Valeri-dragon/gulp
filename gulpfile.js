@@ -4,6 +4,11 @@ const browserSync = require("browser-sync").create();
 gulp.task("default", function () {
   return gulp.src("src/**/*.html").pipe(gulp.dest("dist/"));
 });
+gulp.task("libs", function () {
+  return gulp
+    .src("src/assets/libs/**/*.*")
+    .pipe(gulp.dest("dist/assets/libs/"));
+});
 gulp.task("icon", function () {
   return gulp.src("src/assets/icon/*.svg").pipe(gulp.dest("dist/assets/icon/"));
 });
@@ -21,5 +26,6 @@ gulp.task("server", function () {
     },
   });
   gulp.watch("src/assets/css/*.css").on("change", browserSync.reload);
+  gulp.watch("src/assets/libs/css/*.css").on("change", browserSync.reload);
   gulp.watch("src/*.html").on("change", browserSync.reload);
 });

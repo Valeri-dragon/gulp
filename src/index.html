@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +10,19 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-
+  <link rel="stylesheet" href="./assets/libs/css/bootstrap.css">
+  <link rel="stylesheet" href="./assets/libs/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/style.css">
   <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
   <title>Document</title>
 </head>
 
-  <body class="page">
-    <div class="block-shadown"><!-- верхний колонтитул и навигация -->
-    
+<body class="page">
+  <div class="block-shadown"><!-- верхний колонтитул и навигация -->
+
     <header class="header page__header container">
-    
+
       <div class="logo">
         <a href="/" class="logo__content"><img src="./assets/icon/logo.svg" alt="logo"></a>
       </div>
@@ -49,11 +52,42 @@
           <button class="block-sign-in__button">Sign In</button>
         </div>
       </div>
-    
-    </header></div>
-  
-    <!-- нижний колонтитул -->
-    <footer class="footer page__footer">...</footer>
-  
+
+    </header>
+  </div>
+  <section class="advantages container">
+    <h3 class="advantages__title">Почему с нами работают?</h3>
+    <div class="row cards">
+      <div class="col-xs-12  col-sm-6 col-md-3 cards__item">
+        <object data="./assets/icon/icon_1.svg"  type="image/svg+xml" class="img-responsive">
+        </object>
+        <h2 class="cards__title">Позвольте вашим
+        деньгам работать</h2>
+        <p class="cards__description">Проценты по договорам займа выше банковских</p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3  cards__item"> <object data="./assets/icon/icon_2.svg"  type="image/svg+xml" class="img-responsive">
+        </object>
+        <h2 class="cards__title">Зарабатывайте
+        вместе с нами</h2>
+        <p class="cards__description">Мы вкладываем собственные средства</p></div>
+
+      <div class="col-xs-12 col-sm-6 col-md-3 cards__item"> <object data="./assets/icon/icon_3.svg"  type="image/svg+xml" class="img-responsive">
+        </object>
+        <h2 class="cards__title">Абсолютная
+        надежность</h2>
+        <p class="cards__description">Все договоры займа
+        обеспечены залогом</p></div>
+      <div class="col-xs-12 col-sm-6 col-md-3 cards__item"> <object data="./assets/icon/icon_4.svg"  type="image/svg+xml" class="img-responsive">
+        </object>
+        <h2 class="cards__title">Никаких
+        рисков</h2>
+        <p class="cards__description">Наша профессиональная
+        деятельность застрахована</p></div>
+    </div>
+  </section>
+  <!-- нижний колонтитул -->
+  <footer class="footer page__footer">...</footer>
+
 </body>
+
 </html>
